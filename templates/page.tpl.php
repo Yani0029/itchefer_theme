@@ -87,7 +87,7 @@
        <?php endif; ?>
        <div id="slogan">
        <?php if (!empty($site_slogan)): ?>
-          <p class="lead"><?php print $site_slogan; ?></p>
+         <p class="lead"><?php print $site_slogan; ?></p>
        <?php endif; ?>
        </div> <!-- /#site slogan -->
 
@@ -122,7 +122,7 @@
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php //print $site_slogan; ?></p>
+      <?php //print $site_slogan; ?>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>

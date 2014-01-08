@@ -2,6 +2,25 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+
+#block-system-navigation li.leaf.active-trail{
+  font-weight: bold;
+}
+.block-menu-block .nav>li>a {
+  padding: 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+#block-menu-block-1 {
+  padding-top: 15px;
+}
+.block-menu-block .nav>li>a.active {
+  color: #fff;
+  background-color: #bbd248;
+}
+ul.sub_menu3,
+ul.sub_menus {
+  display: none;
+}
 .not-logged-in #signup-form {
   display: none;
   visibility: hidden;
@@ -15,6 +34,12 @@
   width: 60%;
 }
 /*Design*/
+body {
+  background-color:#f3f3f3;
+}
+body.not-front .region-content, body p {
+  font-size: 12px;
+}
 body h1 {
   font-size: 22px !important;
 }
@@ -29,6 +54,10 @@ body h3 {
   background-color: #4b4b4a !important;
   border-color: #4b4b4a !important;
   color: #fff !important;
+}
+.main-container {
+  background-color:#fff;
+  padding-bottom: 45px;
 }
 .btn a {
   color: #fff;
@@ -52,7 +81,7 @@ body h3 {
 .front #page-header {
   margin-left: -70px;
   margin-right:-70px;
-  margin-top: -50px;
+  margin-top: -30px;
   position: relative;
 }
 .block .views-row {
@@ -72,7 +101,7 @@ body h3 {
 .frontslide-text {
   padding: 15px;
 }
-#block-views-arrangementer-block-1 {
+#block-block-5,#block-views-arrangementer-block-1 {
   color: #534f4d;
   padding: 15px;
   border: 1px solid #c8cc93;
@@ -134,7 +163,13 @@ body h3 {
   right: 0px;
   font-weight: bold;
 }
-
+.view-display-id-page .views-row{
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.view-display-id-page .views-field-title-1 {
+  text-align: right;
+}
 body .navbar.container {
   margin-top:0px;
 }
@@ -188,6 +223,7 @@ body .pager li>a {
 body a.active {
   font-weight: bold;
 }
+.second .block a,
 .front .main-container a {
   color: #666666;
 }
@@ -287,11 +323,17 @@ body .forum-tools {
     width:60%;
     padding-right:0px;
   }
-  .one-sidebar .main-container .col-sm-9 {
-    width:81%;
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+    width:80%;
+    padding: 15px 10px;
   }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:61%;
+    padding: 15px 0 15px 10px;
+  }
+
   .main-container .col-sm-6 {
-    width: 42%;
+    width: 41%;
     padding: 0 0;
   }
  
@@ -319,6 +361,7 @@ body .forum-tools {
   .form-search input {
     height: 30px;
     border: none;
+    padding-left: 5px;
   }
   #block-search-form button {
     border: none;
@@ -328,6 +371,7 @@ body .forum-tools {
     margin-left: -15px;
     margin-right:-15px;
     overflow: hidden;
+     clear:both;
   }
   .front section .block {
     width: 32%;
@@ -346,19 +390,20 @@ body .forum-tools {
 }
 @media (min-width: 1000px) {
   .front section .block {
-    width: 270px;
-    margin-right: 12.1px;
+    width: 32%;
+    margin-right: 5px;
   }
+  .front #block-block-5,
   .front #block-views-arrangementer-block-1 {
     margin-right: 0;
     margin-left: 0;
     float: right;
   }
   body #navbar.container {
-    width: 1000px;
+    width: 1200px;
   }
   body .container {
-    width:1000px;
+    width:1200px;
     padding-right: 70px;
     padding-left: 70px;
   }
@@ -370,7 +415,7 @@ body .forum-tools {
   }
  .main-container .col-sm-6 {
     width: 50%;
-    padding: 15px 15px;
+    padding: 15px 0px;
   }
   .two-sidebars .main-container .col-sm-9 {
     width: 67%;
@@ -380,6 +425,42 @@ body .forum-tools {
     margin-left: -70px;
     margin-right: -70px;
   }
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+    width: 83%;
+    padding: 15px 15px;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:69%;
+    padding: 15px 10px;
+  }
+
+}
+@media (min-width: 1100px) {
+  .main-container .col-sm-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 55%;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:70%;
+    padding: 15px 0 15px 10px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .main-container .col-sm-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 59.5%; 
+  }
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+     width: 86%;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:73%;
+    padding: 15px 0 15px 10px;
+  }
+
 }
 .field-collection-container {
   border: none !important;
@@ -515,13 +596,17 @@ a.unflag-action, a.flag-action {
     width: 100%;
     margin-bottom: 20px;
   }
+  .one-sidebar .main-container .col-sm-9 {
+    width: 100%;
+  }
 }
 .field-items img {
   width: 100% !important;
 }
 
 .footer {
-  background: url('../images/footer.png') 100% 100% no-repeat;
+  background: url('../images/footer.png') 100% 100% no-repeat #fff;
+  margin-top:0px;
 }
 /* Sign up*/
 .logged-in form#signup-form .form-item-email-address {
