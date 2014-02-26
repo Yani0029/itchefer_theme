@@ -4,3 +4,56 @@
  * @file
  * template.php
  */
+function itchefer_theme_print_pdf_tcpdf_content($vars) {
+  $pdf = $vars['pdf'];
+  // set content font
+  $pdf->setFont($vars['font'][0], $vars['font'][1], $vars['font'][2]);
+
+  preg_match('!<body.*?>(.*)</body>!sim', $vars['html'], $matches);
+  $pattern = '!(?:<div class="print-(?:logo|site_name|breadcrumb|footer)">.*?</div>|<hr class="print-hr" />)!si';
+  $matches[1] = preg_replace($pattern, '', $matches[1]);
+
+  // Make CCK fields look better
+  $matches[1] = preg_replace('!(<div class="field.*?>)\s*!sm', '$1', $matches[1]);
+  $matches[1] = preg_replace('!(<div class="field.*?>.*?</div>)\s*!sm', '$1', $matches[1]);
+  $matches[1] = preg_replace('!<div( class="field-label.*?>.*?)</div>!sm', '<strong$1</strong>', $matches[1]);
+
+  // Since TCPDF's writeHTML is so bad with <p>, do everything possible to make it look nice
+  $matches[1] = preg_replace('!<(?:p(|\s+.*?)/?|/p)>!i', '<br$1 />', $matches[1]);
+  $matches[1] = str_replace(array('<div', 'div>'), array('<span', 'span><br />'), $matches[1]);
+  do {
+    $prev = $matches[1];
+    $matches[1] = preg_replace('!(</span>)<br />(\s*?</span><br />)!s', '$1$2', $matches[1]);
+  } while ($prev != $matches[1]);
+
+  @$pdf->writeHTML(
+     '<head><link rel="stylesheet" type="text/css" href="'.drupal_get_path('theme','itchefer_theme') .'/css/print.css"></head>' . $matches[1]);
+
+  return $pdf;
+}
+
+function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_register_form' || ($form_id == 'user_profile_form')) {
+    //dpm($form);
+    $form['locations'][0]['#title'] = "Fakturaadresse";
+  }
+  if ($form_id == 'user_profile_form') {
+    global $user;
+    if ($user->uid != 1) {
+      $form['og_user_node']['#access'] = FALSE;
+      $form['contact']['#access'] = FALSE;
+      $form['']['#access'] = FALSE;
+    }
+    if (!isset($user->roles[3])){
+      $form['account']['name']['#disabled'] = TRUE;
+    }
+    
+  }
+  if ($form_id == 'user_login') {
+    $form['name']['#title'] = t('Email/brugernavn');
+    $form['name']['#description'] = t('Indtast din email eller dit brugernavn');
+    $form['pass']['#description'] = t('Indtast adgangskode');
+  }
+  
+  // dpm($form);
+}

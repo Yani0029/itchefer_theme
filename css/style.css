@@ -2,7 +2,84 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
-
+/***** Komunue ****/
+.group_page_first_row, .group_page_2_row {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.group_page_first_row {
+  min-height: 120px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.group_page_2_row {
+  min-height: 170px;
+}
+.group_page_right {
+  color: #333;
+}
+.group_page_description .field-name-body .field-items {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.location-locations-header,
+.group_block_title,
+#block-views-projekter-block-1 .block-title, .group_page_description .field-name-body .field-label,#block-views-projekter-block-2 .block-title {
+  padding: 8px 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #bbd248;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+#block-views-projekter-block-1, #block-views-projekter-block-2 {
+  margin-top: 20px;
+}
+#edit-field-projektomr-de-wrapper {
+  max-width:30%;
+}
+.more-link,.project_title {
+  background: #f5f5f5;
+  padding: 2px 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+.top_space {
+  margin-bottom: 10px;
+}
+.more-link {
+  float: right;
+  margin-top: 20px;
+}
+.project_teaser {
+  padding: 8px 15px;
+}
+.views-exposed-form {
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+.view-projekter {
+  padding: 0 15px;
+}
+.view-id-group .field-label-inline .field-label,
+.view-id-group .field-label-inline .field-items {
+  float: none;
+}
+.view-id-group .user-picture, .view-id-group .location-locations-header,
+.view-id-group .location-locations-wrapper {
+  display: none;
+}
+/* Opslagstavle */
+.author_date ul{
+  display: inline;
+}
+.author_date {
+  border-bottom: 3px solid #e3e3e3;
+}
+.author_date .list-inline li {
+  padding: 0;
+}
+/* system navigation, menu */
 #block-system-navigation li.leaf.active-trail{
   font-weight: bold;
 }
@@ -10,8 +87,11 @@
   padding: 0;
   border-bottom: 1px solid #e3e3e3;
 }
-#block-menu-block-1 {
-  padding-top: 15px;
+#block-block-9 {
+  margin-bottom: 30px;
+}
+.view-id-taxonomy_term {
+  padding-top : 10px;
 }
 .block-menu-block .nav>li>a.active {
   color: #fff;
@@ -55,9 +135,18 @@ body h3 {
   border-color: #4b4b4a !important;
   color: #fff !important;
 }
+.row .page-header {
+  border-bottom: 5px solid #bbd248;
+}
 .main-container {
   background-color:#fff;
   padding-bottom: 45px;
+}
+.not-front .region-content {
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  padding: 5px 10px;
 }
 .btn a {
   color: #fff;
@@ -76,6 +165,30 @@ body h3 {
 }
 #navbar {
   margin-bottom: 30px !important;
+}
+/* User */
+.view-search-user {
+  position: relative;
+}
+.view-search-user .feed-icon {
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+.group_page_right h5 {
+  color: #bbd248;
+  font-weight: bold;
+  font-size: 20px;
+}
+.group_page_right h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.group_page_right h5 a, .group_page_right h6 a {
+  color: #bbd248;
+}
+.field-name-field-recruitment-function, .location-locations-wrapper{
+  padding-left: 15px;
 }
 /* Header */
 .front #page-header {
@@ -164,8 +277,7 @@ body h3 {
   font-weight: bold;
 }
 .view-display-id-page .views-row{
-  margin-bottom: 25px;
-  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 25px; 
 }
 .view-display-id-page .views-field-title-1 {
   text-align: right;
@@ -222,6 +334,9 @@ body .pager li>a {
 /** Link **/
 body a.active {
   font-weight: bold;
+}
+body a {
+  color: #666666;
 }
 .second .block a,
 .front .main-container a {
@@ -357,7 +472,17 @@ body .forum-tools {
     background-color: #fff;
     width: 40%;
     margin-top: 5px;
-  } 
+  }
+  /*.region-navigation #block-block-7 {
+    padding: 5px 5px;
+    width: 80%;
+    position: absolute;
+    bottom: -83px;
+    right: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+  } */
   .form-search input {
     height: 30px;
     border: none;
@@ -386,7 +511,35 @@ body .forum-tools {
     width: 38%;
     margin-right: 10px;
   }
-
+  .group_logo_left,.group_page_left {
+    width: 30%;
+    float: left;
+  }
+  .group_page_right {
+    float: right;
+    width: 70%;
+  }
+  .group_logo_left img {
+    width: 80%;
+    height: inherit;
+  }
+  .group_logo_left .user-picture img {
+    width : 100px;
+    height: 100px;
+  }
+  .group_page_first_row .group_page_right{
+    margin-top: 20px;
+  }
+  .view .group_page_first_row .group_page_right{
+    margin-top: 0px;
+  }
+  .field-name-field-region {
+    float: left;
+    padding-right: 15px;
+  }
+  .event_page_row {
+    min-height: 50px;
+  }
 }
 @media (min-width: 1000px) {
   .front section .block {
@@ -600,7 +753,7 @@ a.unflag-action, a.flag-action {
     width: 100%;
   }
 }
-.field-items img {
+.field-name-body .field-items img {
   width: 100% !important;
 }
 
