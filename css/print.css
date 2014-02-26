@@ -1,0 +1,65 @@
+.pris {
+ 
+  float: right;  
+}
+.event-price,
+.event-moms,
+.event-total-price {
+
+
+}
+.print-content img {
+  float : right;
+  max-width: 20%;
+  position: absolute;
+  top: 30px;
+}
+.field-label-inline .field-label, .field-label-inline .field-items {
+  float: left;
+}
+.node-type-itchefer-invoice h1.page-header {
+  display: none;
+  visibility: hide;
+}
+.field-name-field-invoice-company {
+  width: 100%;
+}
+.print-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom : 0px;  
+
+}
+.float-right {
+ 
+  padding: 10px 2px 10px 10px;
+  text-align: right;
+}
+.float-left {
+  float: left;
+}
+.arrangementer {
+  width: 100%;
+  float: right;
+  padding: 20px 0px 20px 0;
+}
+.print-foot,
+.print-footer {
+  text-align: center;
+}
+.pay_date {
+  margin: 30px 0 30px 0;
+  float: right;
+  width: 100%;
+}
+
+.andre-info {
+  border: 1px solid #666;
+  padding: 10px;
+  float: right;
+  width: 100%;
+}
+.print-footer {
+   position: absolute;
+   bottom: 0;
+}
