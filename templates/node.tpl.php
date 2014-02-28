@@ -104,7 +104,7 @@
       print render($content);
     ?>
   </div>
-  <?php print $user_picture; ?>
+  <?php //print $user_picture; ?>
   <?php if ($display_submitted): ?>
     <div class="submitted">
       <?php print $submitted; ?>

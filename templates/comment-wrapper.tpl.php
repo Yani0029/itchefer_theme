@@ -38,7 +38,7 @@
 ?>
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($content['comment_form']): ?>
-    <h2 class="title comment-form"><?php print t('Skriv en kommentar'); ?></h2>
+    <h2 class="title comment-form"><?php print t('Tilføj kommentar'); ?></h2>
     <?php print render($content['comment_form']); ?>
   <?php endif; ?>
 

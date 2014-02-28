@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-4hoez4');
-	src:url('fonts/icomoon.eot?#iefix-4hoez4') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-4hoez4') format('woff'),
-		url('fonts/icomoon.ttf?-4hoez4') format('truetype'),
-		url('fonts/icomoon.svg?-4hoez4#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-a5hlmt');
+	src:url('fonts/icomoon.eot?#iefix-a5hlmt') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-a5hlmt') format('woff'),
+		url('fonts/icomoon.ttf?-a5hlmt') format('truetype'),
+		url('fonts/icomoon.svg?-a5hlmt#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -47,6 +47,21 @@
 .icon-bubbles:before {
 	content: "\e60e";
 }
+.icon-bubble2:before {
+	content: "\e618";
+}
+.icon-bubbles2:before {
+	content: "\e619";
+}
+.icon-box-add:before {
+	content: "\e61a";
+}
+.icon-bubbles3:before {
+	content: "\e61b";
+}
+.icon-bubbles4:before {
+	content: "\e61c";
+}
 .icon-files:before {
 	content: "\e605";
 }
@@ -79,4 +94,25 @@
 }
 .icon-location:before {
 	content: "\e612";
+}
+.icon-download:before {
+	content: "\e61d";
+}
+.icon-tag:before {
+	content: "\e613";
+}
+.icon-envelope:before {
+	content: "\e61e";
+}
+.icon-hand-down:before {
+	content: "\e614";
+}
+.icon-folder-open:before {
+	content: "\e615";
+}
+.icon-folder-open-alt:before {
+	content: "\e616";
+}
+.icon-docs:before {
+	content: "\e617";
 }

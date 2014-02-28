@@ -33,16 +33,23 @@ function itchefer_theme_print_pdf_tcpdf_content($vars) {
 }
 
 function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
   if ($form_id == 'user_register_form' || ($form_id == 'user_profile_form')) {
-    //dpm($form);
+   // dpm($form);
     $form['locations'][0]['#title'] = "Fakturaadresse";
   }
+  if ($form_id == 'user_register_form') {
+    if (!isset($user->roles[3])){
+      $form['og_group_ref']['#access'] = FALSE;
+    }
+  }
   if ($form_id == 'user_profile_form') {
-    global $user;
     if ($user->uid != 1) {
       $form['og_user_node']['#access'] = FALSE;
       $form['contact']['#access'] = FALSE;
-      $form['']['#access'] = FALSE;
+      $form['overlay_control']['#access'] = FALSE;
+      $form['mimemail']['#access'] = FALSE;
+      $form['ckeditor']['#access'] = FALSE;
     }
     if (!isset($user->roles[3])){
       $form['account']['name']['#disabled'] = TRUE;
@@ -57,3 +64,11 @@ function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
   
   // dpm($form);
 }
+
+function itchefer_theme_preprocess_node(&$variables) {
+  $variables['submitted'] = "<i class='icon-user'></i> ". $variables['name']. " ". "<i class='icon-calendar2'></i> " . $variables['date'];
+}
+function itchefer_theme_preprocess_comment(&$variables) {
+  $variables['submitted'] = "<i class='icon-user'></i> ". $variables['author']. " ". "<i class='icon-calendar2'></i> " . $variables['created'];
+}
+

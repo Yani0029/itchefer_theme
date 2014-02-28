@@ -35,6 +35,11 @@
 //        $('.view-search-user .feed-icon a').text().append('<img src="/sites/all/modules/views_export_xls/images/xls-icon.jpg" />');
      $(".main-container .button").addClass('btn');
      $('.author_date ul.list-inline li.comment-comments').append(' <i class="icon-bubble"><i> ');
+      $("<i class='icon-tag'></i>  ").insertBefore(".field-name-field-tags");
+      $("<i class='icon-bubble' style='margin:0px 5px'></i>  ").insertBefore(".action-links a[href='/messages/new']");
+      $("<i class='icon-location' style='margin:0px 5px'></i>  ").insertBefore(".field-name-field-arrangement-sted .location .fn");
+      $("<i class='icon-arrow-right' style='margin:0px 5px; font-size: 17px'></i>  ").insertBefore(".forum-add-node");
+      $(".author-pane a.username").hide();
   // End of attach
   }
 

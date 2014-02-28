@@ -50,7 +50,7 @@
            print "<i class='icon-office'></i> Afdeling - ";
            if (isset($user_profile['field_user_department']))
            print $user_profile['field_user_department'][0]['#markup'];
-           print "<br /><a href='mailto:".$user_profile['field_firstname']['#object']->mail."'> <i class='icon-envelope'></i> ";
+           print "<br /><a href='mailto:".$user_profile['field_firstname']['#object']->mail."'> <i class='icon-mail'></i> ";
            print render($user_profile['field_firstname']['#object']->mail) ."</a>";
            print "<br /><i class='icon-phone'></i> ";
            if (isset($user_profile['field_telephone_number']))
