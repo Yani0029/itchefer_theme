@@ -1,0 +1,315 @@
+@media (width: 768px) {
+  .main-container .col-sm-6 {
+    width: 75% !important;
+  }
+  aside.second.col-sm-3 {
+    width:0;
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (min-width: 768px) {
+  body #navbar.container {
+    width: 100%;
+    max-width: 100%;
+  }
+  body .container {
+    width: 100%;
+    max-width:100%;
+  }
+  .navbar.navbar-default .navbar-collapse .menu {
+    position: absolute;
+    right: 15px;
+    height: 30px;
+    background-color: #bbd248;
+    width: 260px;
+    z-index: 800;
+  }
+  .navbar.navbar-default .navbar-collapse .region-navigation {
+    position: absolute;
+    right: 15px;
+    top:0;
+  }
+  aside.first.col-sm-3 {
+    width: 147px;
+  }
+  .tow-sidebars .main-container .col-sm-9 {
+    width:60%;
+    padding-right:0px;
+  }
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+    width:80%;
+    padding: 15px 10px;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:61%;
+    padding: 15px 0 15px 10px;
+  }
+  .main-container .col-sm-6 {
+    width: 41%;
+    padding: 0 0;
+  }
+  aside.second.col-sm-3 {
+    float: right;
+    width: 290px;
+  }
+  .region-navigation {
+    width: 260px;
+    background-color: #fff;
+    height: 30px;
+  }
+  .region-navigation .block-search {
+    width: 60%;
+    float: left !important;
+    margin: 0px 0px !important;
+  }
+  .region-navigation .block-block {
+    float: right;
+    background-color: #fff;
+    width: 40%;
+    margin-top: 5px;
+  }
+  /*.region-navigation #block-block-7 {
+    padding: 5px 5px;
+    width: 80%;
+    position: absolute;
+    bottom: -83px;
+    right: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+  } */
+  .form-search input {
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+  }
+  #block-search-form button {
+    border: none;
+    height: 30px;
+  }
+  .front #page-header {
+    margin-left: -15px;
+    margin-right:-15px;
+    overflow: hidden;
+     clear:both;
+  }
+  .front section .block {
+    width: 32%;
+    margin-left: 1%;
+    float: left;
+  }
+  .front .view-nyhedsbrev .views-row-first {
+    margin-left: 20%;
+  }
+  .front .view-id-nyhedsbrev .views-row {
+    float:left;
+    width: 38%;
+    margin-right: 10px;
+  }
+  /* Kommune / projekt/ views */
+  .group_logo_left,.group_page_left {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .group_page_right {
+    float: none;
+    width: 100%;
+  }
+  .group_logo_left img {
+    width: 50%;
+    height: inherit;
+  }
+  .group_logo_left .user-picture img {
+    width : 100px;
+    height: 100px;
+  }
+  .group_page_first_row .group_page_right{
+    margin-top: 10px;
+  }
+  .view .group_page_first_row .group_page_right{
+    margin-top: 0px;
+  }
+  .field-name-field-region {
+    float: left;
+    padding-right: 15px;
+  }
+  .event_page_row {
+    min-height: 50px;
+  }
+  #navbar {
+    position: relative;
+  }
+  .region-navigation {
+    bottom: 5px;
+    right: 15px;
+    position: absolute;
+  }
+  ul.secondary {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+  }
+  .footer .block {
+    width: 70%;
+  }
+}
+@media (min-width: 1000px) {
+  .front section .block {
+    width: 32%;
+    margin-right: 5px;
+  }
+  .front #block-block-5,
+  .front #block-views-arrangementer-block-1 {
+    margin-right: 0;
+    margin-left: 0;
+    float: right;
+  }
+  body #navbar.container {
+    width: 1200px;
+  }
+  body .container {
+    width:1200px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  .navbar.navbar-default .navbar-collapse .menu {
+    right: 70px;
+  }
+  .navbar.navbar-default .navbar-collapse .region-navigation {
+    right: 70px;
+  }
+ .main-container .col-sm-6 {
+    width: 50%;
+    padding: 15px 0px;
+  }
+  .two-sidebars .main-container .col-sm-9 {
+    width: 67%;
+    padding: 15px 15px;
+  }
+  .front #page-header {
+    margin-left: -70px;
+    margin-right: -70px;
+  }
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+    width: 83%;
+    padding: 15px 15px;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:69%;
+    padding: 15px 10px;
+  }
+  .group_logo_left,.group_page_left {
+    width: 40%;
+    float: left;
+  }
+  .group_page_right {
+    float: right;
+    width: 60%;
+  }
+  .group_logo_left img {
+    width: 80%;
+    height: inherit;
+  }
+}
+@media (min-width: 1100px) {
+  .main-container .col-sm-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 55%;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:70%;
+    padding: 15px 0 15px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container .col-sm-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 59.5%; 
+  }
+  .one-sidebar.sidebar-first .main-container .col-sm-9 {
+     width: 86%;
+  }
+  .one-sidebar.sidebar-second .main-container .col-sm-9 {
+    width:73%;
+    padding: 15px 0 15px 10px;
+  }
+}
+@media (max-width:767px) {
+  .front #page-header {
+    margin-left : -15px;
+    margin-right: -15px;
+    overflow: hidden;
+  }
+  .region-navigation {
+    float: right;
+  }
+  .field-items img {
+    max-width: 100% !important;
+  }
+  .footer{
+    background: none !important;
+  }
+  .front .main-container section .block {
+    width: 100% !important;
+    margin-top:20px !important;
+  }
+  .view-nyhedsbrev {
+    margin-top: 125px;
+  }
+  .view-id-nyhedsbrev .views-row {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .one-sidebar .main-container .col-sm-9 {
+    width: 100%;
+  }
+  /* Kommune / projekt/ views */
+  .group_logo_left,.group_page_left {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  .group_page_right {
+    float: none;
+    width: 100%;
+  }
+  .group_logo_left img {
+    width: 50%;
+    height: inherit;
+  }
+  .group_page_first_row .group_page_right{
+    margin-top: 10px;
+  }
+  #backtotop {
+    bottom: 3px;
+  }
+  .front .view-nyhedsbrev {
+    position: inherit;
+  }
+  /* Main menu div */
+  .navbar #block-search-form {
+    margin: 0 0;
+  }
+  .form-control {
+    height: 34px;
+  }
+  #block-block-3 {
+    padding: 10px 0px;
+  }
+  #block-block-3 a span{
+    color: #fff !important;
+  }
+  #block-block-3 a:hover {
+    text-decoration: none;
+  }
+  #navbar .navbar-nav>li>a:hover {
+    background-color: #bbd248;
+    font-weight: bold;
+    color: #fff;
+  }
+}

@@ -28,8 +28,7 @@
 <div id="<?php print $post_id; ?>" class="<?php print $classes; ?>" <?php print $attributes; ?>>
   <div class="forum-post-info clearfix">
     <div class="forum-posted-on">
-      <?php print $date ?>
-
+      
       <?php
       // This whole section is for printing the "new" marker. With core comment
       // we just need to check a variable. With Node Comment, we need to do
@@ -50,17 +49,19 @@
         <?php endif; ?>
       <?php endif; ?>
     </div>  <?php // End of posted on div ?>
-
-    <?php if (!empty($in_reply_to)): ?>
-   	 <span class="forum-in-reply-to"><?php print $in_reply_to; ?></span>
-    <?php endif; ?>
-
+    <br />
+    <i class="icon-user"></i> <?php print $account->name;?>
+    <i class="icon-calendar2"></i> <?php print $date ?>
     <?php // Add a note when a post is unpublished so it doesn't rely on theming. ?>
     <?php if (!$node->status): ?>
       <span class="unpublished-post-note"><?php print t("Unpublished post") ?></span>
     <?php endif; ?>
 
     <span class="forum-post-number"><?php print $permalink; ?></span>
+    <div class="forum-post-links">
+      <?php print render($content['links']); ?>
+    </div>
+
   </div> <?php // End of post info div ?>
 
   <div class="forum-post-wrapper">
@@ -69,10 +70,15 @@
     <div class="forum-post-panel-main clearfix">
       <?php if (!empty($title)): ?>
         <div class="forum-post-title">
-          <?php print $title ?>
+          <?php //print $title ?>
         </div>
       <?php endif; ?>
 
+      <div class="forum-post-panel-sub">
+        <?php if (!empty($author_pane)): ?>
+          <?php print $author_pane; ?>
+        <?php endif; ?>
+      </div>
       <div class="forum-post-content">
         <?php
           // We hide the comments and links now so that we can render them later.
@@ -85,35 +91,14 @@
         ?>
       </div>
 
-
-      <?php /*if (!empty($post_edited)): ?>
-        <div class="post-edited">
-          <?php print $post_edited ?>
-        </div>
-      <?php endif;*/ ?>
-
-      <?php if (!empty($signature)): ?>
+      <?php /*if (!empty($signature)): ?>
         <div class="author-signature">
           <?php print $signature ?>
         </div>
-      <?php endif; ?>
-    </div>
-    <div class="forum-post-panel-sub">
-      <?php if (!empty($author_pane)): ?>
-        <?php print $author_pane; ?>
-      <?php endif; ?>
+      <?php endif; */?>
     </div>
   </div> <?php // End of post wrapper div ?>
 
-  <div class="forum-post-footer clearfix">
-    <div class="forum-jump-links">
-      <a href="#forum-topic-top" title="<?php print t('Jump to top of page'); ?>" class="af-button-small"><span><?php print t("Top"); ?></span></a>
-    </div>
-
-    <div class="forum-post-links">
-      <?php print render($content['links']); ?>
-    </div>
-  </div> <?php // End of footer div ?>
 </div> <?php // End of main wrapping div ?>
 
 <?php print render($content['comments']); ?>
