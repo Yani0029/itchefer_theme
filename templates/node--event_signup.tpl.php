@@ -82,66 +82,50 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
+  <?php //print $user_picture; ?>
+
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
+  <?php /*if ($display_submitted): ?>
+    <div class="submitted">
+      <?php print $submitted; ?>
+    </div>
+  <?php endif; */?>
+
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      //print render($content);
-
+     // print render($content);
+     if ($content['field_event_node_id'])
+       print render($content['field_event_node_id']);
+     if ($content['field_signup_user'])
+       print render($content['field_signup_user']);
+     print "<div class='group_page_description'>";
+     print "<div class='group_block_title'>";
+     print "Info</div>";
+     if (isset($content['field_signup_package']))
+       print render($content['field_signup_package']);
+     if (isset($content['field_signup_days']))
+       print render($content['field_signup_days']);
+     if (isset($content['field_signup_day_2']))
+       print render($content['field_signup_day_2']);
+     print "</div>";
     ?>
   </div>
-  <div class="group_page_first_row">
-    <div class='group_logo_left'>
-      <?php if (!empty($content['field_logo_picture'])) {
-              print render($content['field_logo_picture']);
-            }
-      ?>
-    </div>
-    <div class='group_page_right'>
-      <?php if (!empty($content['field_region'])) {
-              print render($content['field_region']);
-            }
-            if (!empty($content['field_total_it_employee'])) {
-              print render($content['field_total_it_employee']);
-            }
-      ?>
-    </div>
-  </div>
-  <div class="group_page_2_row">
-    <div class='group_page_left'>
-    <?php if (!empty($content['field_chief_editor'])) {
-            print render($content['field_chief_editor']);
-          }
-    ?>
-    <a class ='see_everyone' href="/kommuner/medlemmer/<?php print $node->nid?>">Se medlemmer i Kommunen</a>
-    </div>
-    <div class="group_page_right">
-      <?php if (!empty($content['field_responsibilities'])) {
-            print render($content['field_responsibilities']);
-          }
-      ?>
-    </div>
-  </div>
-
-  <div class="group_page_description">
-    <?php  if (!empty($content['body'])) {
-          print render($content['body']);
-        }
-    ?>
-  </div>
-
-  <?php print $user_picture; ?>
+  <?php //print $user_picture; ?>
   <?php if ($display_submitted): ?>
     <div class="submitted">
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
+  <?php //print render($content['links']); ?>
+
+  <?php print render($content['comments']); ?>
 
 </div>

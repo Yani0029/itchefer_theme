@@ -35,7 +35,7 @@ function itchefer_theme_print_pdf_tcpdf_content($vars) {
 function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
   global $user;
   if ($form_id == 'user_register_form' || ($form_id == 'user_profile_form')) {
-   // dpm($form);
+    //dpm($form);
     $form['locations'][0]['#title'] = "Fakturaadresse";
   }
   if ($form_id == 'user_register_form') {
@@ -50,6 +50,7 @@ function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
       $form['overlay_control']['#access'] = FALSE;
       $form['mimemail']['#access'] = FALSE;
       $form['ckeditor']['#access'] = FALSE;
+      $form['account']['mail']['htmlmail_plaintext']['#access'] = FALSE;
     }
     if (!isset($user->roles[3])){
       $form['account']['name']['#disabled'] = TRUE;

@@ -9,6 +9,15 @@
   }
 }
 @media (min-width: 768px) {
+  /** Message table */
+  .privatemsg-list-count,
+  .privatemsg-header-threadstarted,
+  .privatemsg-list-date-started,
+  .privatemsg-header-count {
+    display: none;
+    visibility: hidden;
+  }
+
   body #navbar.container {
     width: 100%;
     max-width: 100%;
@@ -131,7 +140,7 @@
   .view .group_page_first_row .group_page_right{
     margin-top: 0px;
   }
-  .field-name-field-region {
+  .group_page_right .field-name-field-region {
     float: left;
     padding-right: 15px;
   }
@@ -154,8 +163,31 @@
   .footer .block {
     width: 70%;
   }
+  form#privatemsg-list .form-submit {
+    bottom: 35px;
+    right: 20px;
+    position: absolute;
+  }
+}
+@media (max-width: 425px) {
+  /** Message table */
+  .privatemsg-list-count,
+  .privatemsg-header-threadstarted,
+  .privatemsg-list-date-started,
+  .privatemsg-header-count {
+    display: none;
+    visibility: hidden;
+  }
 }
 @media (min-width: 1000px) {
+  /** Message table */
+  .privatemsg-list-count,
+  .privatemsg-header-threadstartedd,
+  .privatemsg-list-date-started,
+  .privatemsg-header-count {
+    display: table-cell;
+    visibility: visible;
+  }
   .front section .block {
     width: 32%;
     margin-right: 5px;
@@ -298,6 +330,11 @@
   .form-control {
     height: 34px;
   }
+  form#privatemsg-list .form-submit {
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+  }
   #block-block-3 {
     padding: 10px 0px;
   }
@@ -312,4 +349,9 @@
     font-weight: bold;
     color: #fff;
   }
+  a[href='/tilmelding'] {
+    display: none !important;
+    visibility: hidden;
+  }
+
 }

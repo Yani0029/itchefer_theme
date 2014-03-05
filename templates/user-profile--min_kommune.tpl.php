@@ -57,7 +57,8 @@
            print $user_profile['field_telephone_number'][0]['#markup'];
            print "<br /><i class='icon-bubble'></i> ";
            print render($user_profile['privatemsg_send_new_message']);
-         //  print "</div></div>";
+           print "<a href='/messages/new/" .$user_profile['field_firstname']['#object']->uid."'>Send en besked</a>";         
+//  print "</div></div>";
 
 
         //   print "<div class='work_areas'>";

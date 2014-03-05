@@ -166,7 +166,15 @@ body h2 {
   font-size: 18px
 }
 body h3 {
-  font-size: 15px !important;
+  font-size: 15px;
+}
+.view-search-user h3 {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.view-search-user h3 a {
+  color: #bbd248;
 }
 .main-container .btn {
   padding: 2px 12px !important;
@@ -189,6 +197,11 @@ body h3 {
 }
 .btn a {
   color: #fff;
+}
+body caption a,
+.itchefer-green,
+.itchefer-green a {
+  color: #bbd248;
 }
 #signup-form .btn,
 .cancel-signup {
@@ -474,6 +487,7 @@ body .forum-tools {
   width: 100%;
 }
 .forum-node-create-links {
+  float: none;
   margin: 10px 0px;
   font-size: 14px;
 }
@@ -621,10 +635,21 @@ a.unflag-action, a.flag-action {
 .logged-in form#signup-form .form-item-email-address {
   display: none;
 }
+.node-event-signup .field-name-field-event-node-id {
+  font-size: 18px;
+  padding: 20px 20px;
+}
+.node-event-signup .field-name-field-event-node-id .field-items a {
+  color: #bbd248;
+}
+.node-event-signup .field-name-field-signup-user {
+  padding: 20px 20px;
+}
 /* Form */
 .form-control {
   height: 22px;
   padding : 0 0;
+  width: inherit;
 }
 #edit-title-wrapper,
 #edit-city-wrapper,
