@@ -144,21 +144,21 @@
     ?>
     </div>
   </div>
-  <div class="group_page_description">
+  <!--<div class="group_page_description">
     <div class="group_block_title">
       Tilmelding
     </div>
     <div class="view-projekter">
-    <?php  if (isset($content['signup']) && !empty($content['signup'])) {
+    <?php  /*if (isset($content['signup']) && !empty($content['signup'])) {
           print render($content['signup']);
         }
     ?>
     <?php  if (isset($content['signup_list']) && !empty($content['signup_list'])) {
           print render($content['signup_list']);
         }
-    ?>
+    */?>
     </div>
-  </div>
+  </div>-->
 
   <?php if ($display_submitted): ?>
     <div class="submitted">

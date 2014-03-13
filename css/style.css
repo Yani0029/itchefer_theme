@@ -140,6 +140,9 @@ ul.sub_menu3,
 ul.sub_menus {
   display: none;
 }
+.form-item-recipient ul {
+  list-style: none;
+}
 .not-logged-in #signup-form {
   display: none;
   visibility: hidden;
@@ -255,7 +258,7 @@ body a {
 .block .views-row {
   border: none;
 }
-.block .views-field-field-font-text {
+.block .views-field-field-front-slide-text {
   position: absolute;
   top: 160px;
   font-weight: bold;
@@ -285,10 +288,13 @@ body a {
   padding: 15px;
   border: 1px solid #c8cc93;
   /*border-radius: 7px;*/
-  height: 150px;
+  min-height: 150px;
   margin-top: 20px;
   background: url('../images/calendar.png') 95% 4% no-repeat;
   background-size: 60px;
+}
+.not-front #block-views-arrangementer-block-2 {
+  min-height: 150px;
 }
 #block-views-kita-magasinet-block {
   color: #534f4d;
@@ -362,7 +368,7 @@ body .navbar.container {
   background: -o-linear-gradient(#caca57, #caca57); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#caca57, #caca57); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#caca57, #caca57); /* Standard syntax (must be last) */
-
+  background-color: #caca57;
 }
 #block-system-navigation {
   padding-bottom: 20px;
@@ -391,7 +397,7 @@ body .navbar.container {
 }
 .view-search-user .feed-icon {
   position: absolute;
-  top: 0;
+  top: 120px;
   right: 0;  
 }
 h5, .group_page_right h5 {
@@ -622,6 +628,10 @@ a.unflag-action, a.flag-action {
 /* images*/
 .field-name-body .field-items img {
   width: 100% !important;
+}
+.node .content .field-item img {
+  height: inherit;
+  width: 100%;
 }
 .footer {
   background: url('../images/footer.png') 100% 100% no-repeat #fff;

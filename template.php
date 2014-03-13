@@ -63,7 +63,15 @@ function itchefer_theme_form_alter(&$form, &$form_state, $form_id) {
     $form['pass']['#description'] = t('Indtast adgangskode');
   }
   
-  // dpm($form);
+   //dpm($form);
+  if (isset($form['type']['#value']) && $form['type']['#value'] == 'group' && $user->uid != 1)  {
+    //dpm($form);
+    $form['group_register']['#access'] = FALSE;
+    $form['og_roles_permissions']['#access'] = FALSE;
+    $form['group_access']['#access'] = FALSE;
+
+  }
+
 }
 
 function itchefer_theme_preprocess_node(&$variables) {

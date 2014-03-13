@@ -18,6 +18,9 @@
     visibility: hidden;
   }
 
+ .view-search-user .feed-icon {
+    top: 100px;
+  }
   body #navbar.container {
     width: 100%;
     max-width: 100%;
@@ -125,6 +128,7 @@
   .group_page_right {
     float: none;
     width: 100%;
+    margin-left: 15px;
   }
   .group_logo_left img {
     width: 50%;
@@ -168,6 +172,11 @@
     right: 20px;
     position: absolute;
   }
+  .front .region-content .block-block,
+  .front .region-content .block-views {
+    height:  170px;
+    min-height: 170px;
+  }
 }
 @media (max-width: 425px) {
   /** Message table */
@@ -177,6 +186,13 @@
   .privatemsg-header-count {
     display: none;
     visibility: hidden;
+  }
+  .block .views-field-field-front-slide-text {
+    bottom: 0;
+    left: 0px;
+    height: inherit;
+    width: 100%;
+    top: inherit;
   }
 }
 @media (min-width: 1000px) {
@@ -197,6 +213,11 @@
     margin-right: 0;
     margin-left: 0;
     float: right;
+  }
+  .front .region-content .block-block,
+  .front .region-content .block-views {
+    height:  150px;
+    min-height: 150px;
   }
   body #navbar.container {
     width: 1200px;
@@ -239,10 +260,11 @@
   .group_page_right {
     float: right;
     width: 60%;
+    margin-left: 0;
   }
   .group_logo_left img {
-    width: 80%;
-    height: inherit;
+    width: 90px;
+    height: 108px;
   }
 }
 @media (min-width: 1100px) {
@@ -309,6 +331,7 @@
   .group_page_right {
     float: none;
     width: 100%;
+    margin-left: 15px;
   }
   .group_logo_left img {
     width: 50%;
@@ -353,5 +376,10 @@
     display: none !important;
     visibility: hidden;
   }
-
+  .view-search-user .feed-icon {
+    top: -20px;
+  }
+  .block .views-field-field-front-slide-text {
+    height: inherit;
+  }
 }
