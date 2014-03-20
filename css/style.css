@@ -538,6 +538,7 @@ body .forum-tools {
 /* logo*/
 .navbar-header {
   float: none !important;
+  height: 116px;
 }
 html .navbar-default {
   background-color: #4b4b4a;
@@ -636,6 +637,9 @@ a.unflag-action, a.flag-action {
 .footer {
   background: url('../images/footer.png') 100% 100% no-repeat #fff;
   margin-top:0px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #e5e5e5;
 }
 #backtotop {
   background-size: 65%;
@@ -656,10 +660,10 @@ a.unflag-action, a.flag-action {
   padding: 20px 20px;
 }
 /* Form */
-.form-control {
+.col-sm-6 .form-control {
   height: 22px;
   padding : 0 0;
-  width: inherit;
+  width: initial !important;
 }
 #edit-title-wrapper,
 #edit-city-wrapper,

@@ -29,6 +29,10 @@ stylesheets[all][] = css/print.css
 stylesheets[all][] = css/fonts.css
 stylesheets[all][] = css/responsiv.css
 
+; Use bootstrp local
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap.min.css
+
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
 ; https://drupal.org/node/1978010
@@ -42,6 +46,10 @@ stylesheets[all][] = css/responsiv.css
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; 
 scripts[] = js/script.js
+scripts[] = js/html5shiv.js
+scripts[] = js/respond.min.js
+scripts[] = js/bootstrap.min.js
+
 ; scripts[] = 'bootstrap/js/affix.js'
 ; scripts[] = 'bootstrap/js/alert.js'
 ; scripts[] = 'bootstrap/js/button.js'
