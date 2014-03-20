@@ -133,6 +133,7 @@
         }
     ?>
   </div>
+  <?php if ($logged_in) : ?>
   <div class="group_page_description">
     <div class="group_block_title">
       Filer
@@ -144,6 +145,7 @@
     ?>
     </div>
   </div>
+  <?php endif; ?>
   <div class="group_page_description">
     <div class="group_block_title">
       Tilmelding
