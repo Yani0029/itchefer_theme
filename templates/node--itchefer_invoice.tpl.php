@@ -143,15 +143,24 @@
         print "<strong>Deltagelse i ";
         print render($content['field_event_node_id']['#object']->field_event_node_id['und'][0]['entity']->title). " den ";
         $dato = $content['field_event_node_id']['#object']->field_event_node_id['und'][0]['entity']->field_arrangement_dato_1;
-        print $dato['und'][0]['value'];
+        $dato_1 = $dato['und'][0]['value'];
+        $dato_1 = explode(" ", $dato_1);
+        print $dato_1[0];
         if ($dato['und'][0]['value2'] != $dato['und'][0]['value']) {
-          print " til ". $dato['und'][0]['value2'];
+          print " til ";
+          $dato_2 = $dato['und'][0]['value2'];
+          $dato_2 = explode(" ", $dato_2);
+          print $dato_2[0];
         }
         $sted = $content['field_event_node_id']['#object']->field_event_node_id['und'][0]['entity']->location;
 
         if (!empty($sted)) {
            print " på " ;
-           print $sted['name'] . ", " .$sted['street'].", ".$sted['postal_code'] ." ".$sted['city'];
+           print $sted['name'];
+           if(!empty($sted['street'])) print ", ".$sted['street'];
+           if(!empty($sted['postal_code'])) print ", " . $sted['postal_code'];
+           if(!empty($sted['city'])) print " ".$sted['city'];
+                                  
          }
          print "</strong>";
          print "<hr>";
