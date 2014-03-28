@@ -400,7 +400,7 @@ body .navbar.container {
   top: 120px;
   right: 0;  
 }
-h5, .group_page_right h5 {
+.region-content h5, .group_page_right h5 {
   color: #bbd248;
   font-weight: bold;
   font-size: 20px;
