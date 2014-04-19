@@ -140,6 +140,7 @@ ul.sub_menu3,
 ul.sub_menus {
   display: none;
 }
+.action-links li,
 .form-item-recipient ul {
   list-style: none;
 }
@@ -157,7 +158,7 @@ ul.sub_menus {
 }
 /* Body design */
 body {
-  background-color:#f3f3f3;
+  background-color:#f3f3f3 !important;
 }
 body.not-front .region-content, body p {
   font-size: 12px;
@@ -660,16 +661,21 @@ a.unflag-action, a.flag-action {
   padding: 20px 20px;
 }
 /* Form */
-.col-sm-6 .form-control {
-  height: 22px;
+.col-sm-6 .ctools-jump-menu-select {
   padding : 0 0;
   width: initial !important;
+}
+#edit-field-file-path-und {
+  height: 200px;
 }
 #edit-title-wrapper,
 #edit-city-wrapper,
 #edit-type-1-wrapper,
 .views-submit-button {
   width: 25%;
+}
+#privatemsg-list-form #edit-operation {
+  width: inherit;
 }
 /** table  **/
 .table>thead>tr>th,
@@ -687,3 +693,9 @@ a.unflag-action, a.flag-action {
 .page-dokumenter .view-dokumenter .views-exposed-form .views-submit-button {
   width: 10%;
 }
+
+/* print and send */
+.region-content label.printmail-label {
+  float: none;
+}
+

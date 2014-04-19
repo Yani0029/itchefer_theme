@@ -200,7 +200,7 @@
   .privatemsg-list-count,
   .privatemsg-header-threadstartedd,
   .privatemsg-list-date-started,
-  .privatemsg-header-count {
+  .sticky-enabled .privatemsg-header-count {
     display: table-cell;
     visibility: visible;
   }
