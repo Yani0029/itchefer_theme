@@ -35,7 +35,7 @@
     height: 30px;
     background-color: #bbd248;
     width: 260px;
-    z-index: 800;
+    z-index: 400;
   }
   .navbar.navbar-default .navbar-collapse .region-navigation {
     position: absolute;
