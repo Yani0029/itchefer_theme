@@ -87,9 +87,20 @@
           hide($content['links']);
           if (!$top_post)
             hide($content['body']);
+          hide($content['field_documents']);
           print render($content);
         ?>
       </div>
+      <?php if (!empty($content['taxonomy_forums']['#object']->field_documents)) : ?>
+      <div class="group_page_description">
+        <div class="group_block_title">
+          Filer
+        </div>
+        <div class="view-projekter">
+          <?php print render($content['field_documents']); ?>
+        </div>
+      </div>
+      <?php endif; ?>
 
       <?php /*if (!empty($signature)): ?>
         <div class="author-signature">
