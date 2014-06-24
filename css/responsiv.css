@@ -19,7 +19,7 @@
   }
 
  .view-search-user .feed-icon {
-    top: 100px;
+    top: 90px;
   }
   body #navbar.container {
     width: 100%;
@@ -111,10 +111,10 @@
     margin-left: 1%;
     float: left;
   }
-  .front .view-nyhedsbrev .views-row-first {
+  .front .view-nyhedsbrev .front-new-item.views-row-first {
     margin-left: 20%;
   }
-  .front .view-id-nyhedsbrev .views-row {
+  .front .view-id-nyhedsbrev .front-new-item.views-row {
     float:left;
     width: 38%;
     margin-right: 10px;
@@ -177,6 +177,13 @@
     height:  170px;
     min-height: 170px;
   }
+  #edit-search-api-views-fulltext-wrapper {
+    max-width: 50%;
+  }
+  #edit-field-recruitment-function-wrapper {
+    max-width: 35%;
+  }
+
 }
 @media (max-width: 425px) {
   /** Message table */
@@ -193,6 +200,12 @@
     height: inherit;
     width: 100%;
     top: inherit;
+  }
+  #edit-field-recruitment-function-wrapper {
+    max-width: 35%;
+  }
+  #edit-search-api-views-fulltext-wrapper {
+    max-width: 50%;
   }
 }
 @media (min-width: 1000px) {
@@ -266,6 +279,15 @@
     width: 90px;
     height: 108px;
   }
+  #edit-search-api-views-fulltext-wrapper {
+    max-width: 25%;
+  }
+  #edit-field-recruitment-function-wrapper {
+    max-width: 25%;
+  }
+  .view-search-user .feed-icon {
+    top: 70px;
+  }
 }
 @media (min-width: 1100px) {
   .main-container .col-sm-6 {
@@ -312,7 +334,6 @@
     margin-top:20px !important;
   }
   .view-nyhedsbrev {
-    margin-top: 125px;
   }
   .view-id-nyhedsbrev .views-row {
     width: 100%;
@@ -381,5 +402,11 @@
   }
   .block .views-field-field-front-slide-text {
     height: inherit;
+  }
+  #edit-field-recruitment-function-wrapper {
+    width: 125px;
+  }
+  #edit-search-api-views-fulltext-wrapper {
+    width: 125px;;
   }
 }
