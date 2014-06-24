@@ -4,6 +4,12 @@
  * @file
  * template.php
  */
+function itchefer_theme_preprocess_page(&$vars, $hook) {
+  if(arg(0) == 'min_side') {
+    drupal_set_title('Min Kommune');
+  }
+}
+
 function itchefer_theme_print_pdf_tcpdf_content($vars) {
   $pdf = $vars['pdf'];
   // set content font
@@ -81,3 +87,17 @@ function itchefer_theme_preprocess_comment(&$variables) {
   $variables['submitted'] = "<i class='icon-user'></i> ". $variables['author']. " ". "<i class='icon-calendar2'></i> " . $variables['created'];
 }
 
+/**
+ * Implements template_preprocess_field().
+ */
+function itchefer_theme_preprocess_field(&$vars, $hook) {
+  // Add line breaks to plain text textareas.
+  if (
+    // Make sure this is a text_long field type.
+    $vars['element']['#field_type'] == 'text_long'
+    // Check that the field's format is set to null, which equates to plain_text.
+    && $vars['element']['#items'][0]['format'] == null
+  ) {
+    $vars['items'][0]['#markup'] = nl2br($vars['items'][0]['#markup']);
+  }
+}
