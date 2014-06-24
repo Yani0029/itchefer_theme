@@ -417,6 +417,30 @@ h5 a, .group_page_right h5 a, .group_page_right h6 a {
   padding-left: 15px;
 }
 /** Forum **/
+.page-forums .region-content {
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 4px 4px;
+}
+.page-forums .nav-tabs>li.active>a {
+  background-color: #e5e5e5;
+}
+.page-forums .forum_add {
+  width: 150px;
+  background-color: #bbd248;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  float: right;
+}
+.page-forums .forum_add a {
+  color: #fff;
+}
+.page-forums .page-header {
+  margin-bottom: 5px;
+}
 .forum-table-topics td.views-field-topic-icon {
   width: 30px;
 }
