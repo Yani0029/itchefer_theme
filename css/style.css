@@ -415,6 +415,9 @@ h5 a, .group_page_right h5 a, .group_page_right h6 a {
 .field-name-field-recruitment-function, .location-locations-wrapper{
   padding-left: 15px;
 }
+.group_logo_left .field-name-field-user-description{
+  margin: 10px 0 0 15px;
+}
 /** Forum **/
 .page-forums .region-content {
   background-color: #e5e5e5;

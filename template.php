@@ -8,6 +8,12 @@ function itchefer_theme_preprocess_page(&$vars, $hook) {
   if(arg(0) == 'min_side') {
     drupal_set_title('Min Kommune');
   }
+  if (arg(0) == 'calendar' && !arg(1)) {
+    $breadcrumb = array();
+    $breadcrumb[] = l('Home', '<front>');
+    drupal_set_title('Kalender');
+    drupal_set_breadcrumb($breadcrumb);
+  } 
 }
 
 function itchefer_theme_print_pdf_tcpdf_content($vars) {
