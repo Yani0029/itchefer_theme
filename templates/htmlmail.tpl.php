@@ -125,7 +125,7 @@
           <div>
             <div class="logo" style="max-height: 116px;">
                 <a href="<?php global $base_url; print $base_url; ?>" style="text-decoration: none;">
-                    <img style="width: 100%" src="http://itchefer.dk/sites/all/themes/itchefer_theme/images/mail_logo.png" title="<?php print variable_get('site_name');?>"/>
+                    <img style="width: 100%" src="http://itchefer.dk/sites/all/themes/itchefer_theme/images/mail_logo_1.png" title="<?php print variable_get('site_name');?>"/>
                 </a>
             </div>
           </div>
