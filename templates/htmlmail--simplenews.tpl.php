@@ -25,11 +25,11 @@
        <table style="width: 100%;">
         <tbody>
           <tr>
-            <td style="margin: 0 20px; min-width: 320px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;color: #4b4b4a">
-              Foreningen af Kommunale it-chefer / Sekretariatet / Tlf.: 3190 1155&nbsp;/ Email:&nbsp;<a href="mailto:mail@itchefer.dk" style="color: rgb(153, 153, 153); text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 14.296875px;">mail@itchefer.dk</a>
+            <td style="margin: 0 20px; min-width: 320px; text-align: left;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;color: #4b4b4a">
+              Foreningen af Kommunale it-chefer / Sekretariatet / Tlf.: 3190 1155&nbsp;/ Email:&nbsp;<a href="mailto:mail@itchefer.dk" style="color: rgb(153, 153, 153); text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">mail@itchefer.dk</a>
             </td>
-            <td style="max-width: 250px;">
-              <img style = "width:250px;" src="http://itchefer.dk/sites/all/themes/itchefer_theme/images/footer.png">
+            <td style="max-width: 150px;">
+              <img style = "width:150px;" src="http://itchefer.dk/sites/all/themes/itchefer_theme/images/footer.png">
             </td>
           </tr>
         </tbody>
