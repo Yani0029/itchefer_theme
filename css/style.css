@@ -163,6 +163,9 @@ body {
 body.not-front .region-content, body p {
   font-size: 12px;
 }
+.page-node-edit .region-content {
+  background-color: #e5e5e5;
+}
 body h1 {
   font-size: 22px !important;
 }
@@ -425,7 +428,7 @@ h5 a, .group_page_right h5 a, .group_page_right h6 a {
   border-radius: 4px 4px;
 }
 .page-forums .nav-tabs>li.active>a {
-  background-color: #e5e5e5;
+  background-color: #bbd248;
 }
 .page-forums .forum_add {
   width: 150px;
@@ -584,6 +587,14 @@ html .navbar-default {
 }
 #navbar .navbar-nav>li>a:hover {
   color: #000;
+}
+.nav-tabs>li>a {
+  font-size: 12px;
+  margin-bottom: 2px;
+  background-color: rgb(225, 228, 225);
+}
+.nav-tabs>li.active>a {
+  background-color:#bbd248 !important;
 }
 /** content unpublished **/
 .node-unpublished {
