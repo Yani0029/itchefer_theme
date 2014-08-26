@@ -117,7 +117,7 @@
 ?>
 
 <div style="background-color: #e3e3e3;">
-<table width = "766" id="main-table" style="text-align: center; margin: 0 auto; text-align: justify; border-collapse: collapse; background-color: white;max-width: 766px;">
+<table width = "766" id="main-table" style=" margin: 0 auto;border-collapse: collapse; background-color: white;max-width: 766px;">
     <tbody class="htmlmail_tpl_php" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 14px;
     line-height: 1.428571429; color: #4b4b4a; max-width: 766px;position: relative;margin: 0 auto;">
       <tr>
