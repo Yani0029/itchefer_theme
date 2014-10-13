@@ -177,7 +177,7 @@
     height:  170px;
     min-height: 170px;
   }
-  #edit-search-api-views-fulltext-wrapper {
+  #edit-search-api-aggregation-2-wrapper {
     max-width: 50%;
   }
   #edit-field-recruitment-function-wrapper {
@@ -204,7 +204,7 @@
   #edit-field-recruitment-function-wrapper {
     max-width: 35%;
   }
-  #edit-search-api-views-fulltext-wrapper {
+  #edit-search-api-aggregation-2-wrapper {
     max-width: 50%;
   }
 }
@@ -279,7 +279,7 @@
     width: 90px;
     height: 108px;
   }
-  #edit-search-api-views-fulltext-wrapper {
+  #edit-search-api-aggregation-2-wrapper {
     max-width: 25%;
   }
   #edit-field-recruitment-function-wrapper {
@@ -406,7 +406,7 @@
   #edit-field-recruitment-function-wrapper {
     width: 125px;
   }
-  #edit-search-api-views-fulltext-wrapper {
+  #edit-search-api-aggregation-2-wrapper {
     width: 125px;;
   }
 }
